@@ -1,0 +1,46 @@
+body {
+  background-color: lightgrey;
+}
+.article {
+  color: black;
+  background-color: white;
+  border: 1px dotted blue;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.article > * {
+  margin: 2px;
+}
+
+.article_image {
+  float: right;
+  max-height: 360px;
+  max-width: 640px;
+}
+
+.article_date {
+  display: block;
+}
+.article_date::before {
+  content: "Written at: ";
+  font-weight: bold;
+}
+
+.article_header {
+  display: block;
+}
+
+.article_header::before {
+  content: "Title: ";
+  font-weight: bold;
+}
+
+.article_author {
+  display: block;
+}
+
+.article_author::before {
+  content: "Written by: ";
+  font-weight: bold;
+}
